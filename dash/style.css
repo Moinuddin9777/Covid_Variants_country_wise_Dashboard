@@ -1,0 +1,14 @@
+.banner{
+   height: 40px;
+   margin: 0px -10px 10px;
+   background-color: rgb(66,196,247);
+   border-radius, 2px;
+
+}
+.banner h3{
+   height: 20px;
+   margin: 0px -10px 10px;
+   background-color: rgb(248,255,121);
+   border-radius, 2px;
+
+}
