@@ -15,13 +15,19 @@ app.layout = html.Div(children=[
             style={
                 'textAlign' : 'center',
                 'color' : '#15005B'
-
             }),
+    html.H3(children='This dashboard shows the latest data of different variants of the corona virus and its effect worldwide', style={ 'textAlign': 'center' }),
+    html.H4(children='Select the country whose data you need from the dropdown below'),
+
     dcc.Dropdown(id='geo-drop', options=[{'label':i, 'value': i}
                                          for i in dat['location'].unique()],
-                 value='India'),
+                 placeholder="Select a Country",),
     dcc.Graph(id='Graph')
-])
+], className="banner")
+
+#app.css.append_css({
+#    "external_url":'http://""'
+#})
 
 @app.callback(
     Output(component_id='Graph', component_property='figure'),
