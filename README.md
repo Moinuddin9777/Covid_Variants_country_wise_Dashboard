@@ -11,7 +11,6 @@ Visualizations made with plotly
 Backend with dash   
 Dataset source: Kaggle  
 NOTE: This dashboard is made on data that was fetched till date 10-01-2022 and is not real time data
-.  
 
 
 
